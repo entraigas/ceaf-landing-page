@@ -1,2 +1,3 @@
 # ceaf-landing-page
-esto es una prueba
+pagina de inicio del projecto
+
