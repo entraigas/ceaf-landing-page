@@ -18,51 +18,46 @@
   width: 100%;
   transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
   z-index: 2;
-  height: 160px;
+  height: 120px;
 
+  border-bottom: 3px solid #e1e1e1;
   background-color: #f1f1f1;
-  padding: auto auto;
   color: black;
   text-align: center;
 }
 
-#header h1 {
-  
+
+#after-header {
+  margin-top: 100px;
 }
 
-#main-container {
-  margin-top: 250px;
-  perspective: 2px;
+.footer {
+  border-top: 1px solid #e1e1e1;
+  background-color: #f1f1f1;
+  color: black;
+  text-align: center;
 }
 
-.row {
-  position: relative;
+.carousel {
+  width: 100%;
+}
+.carousel-item {
+  max-height: 800px;
 }
 
-.parallax::after {
-  /* Display and position the pseudo-element */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
+.parallax {
+  background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1::after {
-  background-image: url('https://placekitten.com/g/900/700');
+.ceaf-underline {
+  text-decoration: underline solid red;
 }
 
-.bg2::after {
-  background-image: url('https://placekitten.com/g/800/600');
+.ceaf-overunderline {
+  text-decoration: underline overline solid red;
 }
