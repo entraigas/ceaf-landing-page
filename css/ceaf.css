@@ -1,0 +1,68 @@
+#header-old {
+  z-index: 2;
+  background-color: #f1f1f1; /* Grey background */
+  padding: 50px 10px; /* Some padding */
+  color: black;
+  text-align: center; /* Centered text */
+  font-size: 90px; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  z-index: 2;
+  height: 160px;
+
+  background-color: #f1f1f1;
+  padding: auto auto;
+  color: black;
+  text-align: center;
+}
+
+#header h1 {
+  
+}
+
+#main-container {
+  margin-top: 250px;
+  perspective: 2px;
+}
+
+.row {
+  position: relative;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1::after {
+  background-image: url('https://placekitten.com/g/900/700');
+}
+
+.bg2::after {
+  background-image: url('https://placekitten.com/g/800/600');
+}
