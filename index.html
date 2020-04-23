@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="imagenes/icon-runner.png">
 
     <!-- CSS Bootstrap y custom -->
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
@@ -14,7 +15,16 @@
   <body>
     <!-- Header -->
     <div id="header">
-      <h1 class="py-1">Header</h1>
+      <div class="row">
+        <div class="col-4 col-sm-2">
+          <img id="logo" src="imagenes/logo-ceaf-color.png" class="img-fluid" />
+        </div>
+        <div id="menu" class="col-sm-9 offset-sm-1 d-none d-sm-block">
+          <span>Cursos</span>
+          <span>Quienes Somos</span>
+          <span>Contacto</span>
+        </div>
+      </div>
     </div>
 
     <!-- Page Content -->
@@ -22,11 +32,11 @@
 
       <!-- Carrusel -->
       <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
+        <!--ol class="carousel-indicators">
           <li data-target="#carousel" data-slide-to="0" class="active"></li>
           <li data-target="#carousel" data-slide-to="1"></li>
           <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
+        </ol-->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <a href="javascript:void(null)">
@@ -147,11 +157,16 @@
               <label>Deporte o actividad en la que trabaja o le gustaria</label>
               <input type="text" class="form-control" placeholder="">
             </div>
+
+            <div class="form-group">
+              <button type="button" class="btn btn-primary float-right px-4 py-1">Enviar</button>
+              <button type="button" class="btn btn-secondary float-right px-4 py-1 mr-4">Reset</button>
+            </div>
           </form>
         </div>
       </div>
 
-
+      <!-- Footer -->
       <div class="footer py-2">
         <div class="container">
           <div class="row">
