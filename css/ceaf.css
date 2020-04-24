@@ -17,6 +17,7 @@
   float: left;
   margin-left: 1vmin;
   margin-top: 1vmin;
+  max-height: 8vmin;
 }
 
 #menu {
