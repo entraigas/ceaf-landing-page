@@ -1,3 +1,7 @@
+body {
+  --font-size: 30px;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -45,26 +49,38 @@
   text-align: center;
 }
 
-.carousel {
+/*
+ * carrusel styles
+ */
+ .carousel {
   width: 100%;
 }
 .carousel-item {
   max-height: 800px;
 }
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 10vmin;
+  height: 20vmin;
+  border-radius: 5vmin;
+  border: 1vmin solid rgba(0, 0, 0, 0);
+}
+.carousel-control-next-icon:hover {
+  border: 0;
+}
+.carousel-control-prev-icon:hover {
+  border: 0;
+}
 
 .parallax {
-  background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  width:100%;
+  background-image: url("../imagenes/219165.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.ceaf-underline {
-  text-decoration: underline solid red;
-}
-
-.ceaf-overunderline {
-  text-decoration: underline overline solid red;
-}
